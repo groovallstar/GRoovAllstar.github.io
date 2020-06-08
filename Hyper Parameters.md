@@ -118,4 +118,57 @@ CatBoost Parameters
 
     ref.
     https://towardsdatascience.com/an-example-of-hyperparameter-optimization-on-xgboost-lightgbm-and-catboost-using-hyperopt-12bc41a271e
-    
+
+LogisticRegression Parameters
+
+    - C
+    규칙의 강도를 조절하는 alpha 값의 역수. C = 1/alpha. C값이 작을수록 규제 강도가 큼
+    default = 1.0
+
+    - penalty
+    페널티를 부여할 때 규제의 유형을 설정
+    value = ('l1', 'l2', 'elasticnet', 'none'), default='l2'
+
+    - dual
+    Dual Formulation 인지 Primal Formulation 인지를 결정 (True, False)
+    default = False
+
+    - tol
+    지정한 값만큼 감소되지 않으면 반복을 중단하도록 하는 값
+    default = 1e-4
+
+    - fit_intercept
+    의사 결정 기능에 상수를 추가할 지 여부 결정 (True, False)
+    default = True
+
+    - intercept_scaling
+    synthetic feature weight(합성 피쳐 가중치)는 다른 모든 피처와 마찬가지로 l1, l2 정규화를 따름. 
+    synthetic feature weight (따라서 intercept 에서)에 대한 정규화의 영향을 줄이려면 intercept_scaling을 증가시켜야합니다.
+    default = 1
+
+    - class_weight
+    클래스에 대한 가중치들의 값
+    작은 데이터 세트의 경우 'liblinear'가 좋은 선택이지만 'sag'및 'saga'는 큰 데이터의 경우 더 빠름
+    value = (dict or 'balanced'), default = None
+
+    - solver
+    최적화에 사용할 알고리즘 결정 
+    value = ('newton-cg', 'lbfgs', liblinear', 'sag', 'saga'),  default = 'lbfgs'
+
+    - max_iter
+    solver가 수렴하게 만드는 최대 반복 횟수 값
+    default = 100
+
+    - multi_class
+    선택한 옵션이 'ovr'이면 binary problem을 각 label에 fit함. solver = 'liblinear' 인 경우 'multinomial'을 사용할 수 없음
+    'auto'은 데이터가 binary이거나 solver = 'liblinear' 인 경우 'ovr'를 선택하고 그렇지 않으면 'multinomial'을 선택함
+    value = ('auto', 'ovr', 'multinomial'), default='auto'
+
+    - warm_start
+    이전 호출에 사용했던 solution 을 재사용 할지 여부 결정 
+    value = (True, False), default = False
+
+    - n_jobs
+    병렬 처리 시 사용 할 CPU 코어의 수
+
+        

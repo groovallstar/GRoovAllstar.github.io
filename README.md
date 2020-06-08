@@ -14,6 +14,7 @@ https://partrita.github.io/posts/regression-error/
 # Using BaysianOptimization Tuning Hyper-Parameters
 https://github.com/chulminkw/PerfectGuide/blob/master/4%EC%9E%A5/BaysianOptimization%EC%9D%84%20%EC%9D%B4%EC%9A%A9%ED%95%9C%20%EC%82%B0%ED%83%84%EB%8D%B0%EB%A5%B4%20%EA%B3%A0%EA%B0%9D%20%EB%A7%8C%EC%A1%B1%20%ED%95%98%EC%9D%B4%ED%8D%BC%20%ED%8C%8C%EB%9D%BC%EB%AF%B8%ED%84%B0%20%ED%8A%9C%EB%8B%9D.ipynb
 https://www.inflearn.com/questions/16373
+http://research.sualab.com/introduction/practice/2019/04/01/bayesian-optimization-overview-2.html
 
 # XGBoost
 XGBoost 사용하기
